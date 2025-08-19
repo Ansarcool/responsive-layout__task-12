@@ -48,3 +48,21 @@
   font-size: 0.8em;
   text-align: center;
 }
+.subscribe-form {
+  container-type: inline-size;
+}
+@container (min-width: 500px) {
+  .subscribe-form__title {
+    display: grid;
+    grid-column: 1 / 3;
+  }
+  .subscribe-form__label {
+    grid-column: 1;
+  }
+  .subscribe-form__button {
+    grid-column: 2;
+  }
+  .subscribe-form__agreement-text {
+    grid-column: 1 / 3;
+  }
+}

@@ -53,3 +53,24 @@
   text-decoration: none;
   background-color: var(--menu-link-hover-background-color, #fff);
 }
+@container (min-width: 500px) {
+  .menu__toggle {
+    display: none;
+  }
+  .menu__toggle_is-opened ~ .menu__list {
+    display: flex;
+  }
+  .menu__list {
+    display: flex;
+    position: static;
+    border: none;
+    background: initial;
+  }
+  .menu__list-item:not(:last-child) {
+    border-bottom: none;
+  }
+   .menu__list-link:hover{
+    text-decoration: underline;
+  }
+  }
+  

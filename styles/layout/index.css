@@ -17,4 +17,37 @@
 .icons__text-wrapper {
   margin-block-end: 1em;
 }
-
+@media (min-width: 1000px) {
+  .hero-and-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .icons__text-wrapper {
+    margin: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .icons {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (min-width: 600px) {
+  :root {
+    --section-padding: 40px 20px;
+    --internal-padding: 40px;
+  }
+}
+.header {
+  container-type: inline-size;
+}
+@container (min-width: 500px) {
+  .icons-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
